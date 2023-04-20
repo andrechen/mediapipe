@@ -67,7 +67,20 @@ absl::Status RunMPPGraph() {
   if (load_video) {
     capture.open(absl::GetFlag(FLAGS_input_video_path));
   } else {
-    capture.open(0);
+    // realsense seems have RGB camera in #1
+    cv::Mat test_frame;
+    for (int i=0; i<3; ++i) {
+      if (capture.open(i)) {
+        capture >> test_frame;
+        if (!test_frame.empty() && CV_8UC3==test_frame.type()) {
+          capture.release(); // reopen, since we had grab one frame...
+          capture.open(i);
+          break;
+        } else {
+          capture.release();
+        }
+      }
+    }
   }
   RET_CHECK(capture.isOpened());
 

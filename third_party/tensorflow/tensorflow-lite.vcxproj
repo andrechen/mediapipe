@@ -343,7 +343,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>GLOG_STATIC_DEFINE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;FARMHASH_NO_BUILTIN_EXPECT;TFL_STATIC_LIBRARY_BUILD;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;__PRETTY_FUNCTION__=__FUNCSIG__;_WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GLOG_STATIC_DEFINE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SILENCE_NONFLOATING_COMPLEX_DEPRECATION_WARNING;FARMHASH_NO_BUILTIN_EXPECT;TFL_STATIC_LIBRARY_BUILD;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;__PRETTY_FUNCTION__=__FUNCSIG__;_WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
@@ -363,7 +363,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>GLOG_STATIC_DEFINE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;FARMHASH_NO_BUILTIN_EXPECT;TFL_STATIC_LIBRARY_BUILD;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;__PRETTY_FUNCTION__=__FUNCSIG__;_WIN32;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GLOG_STATIC_DEFINE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SILENCE_NONFLOATING_COMPLEX_DEPRECATION_WARNING;FARMHASH_NO_BUILTIN_EXPECT;TFL_STATIC_LIBRARY_BUILD;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;__PRETTY_FUNCTION__=__FUNCSIG__;_WIN32;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>

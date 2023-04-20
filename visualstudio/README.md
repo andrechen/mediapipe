@@ -1,4 +1,4 @@
-﻿# Greeting from andre :-)
+# Greeting from andre :-)
 
 It took me almost 3 weeks to make face mesh build on Visual Studio before I can test and debug easily. So I'd like to share this to anyone who is surfering bazel build and trying to port to Visual Studio like I did. Would be glad if this saves your precious time. Many thanks to mediapipe team for sharing this fantastic work.
 
@@ -30,5 +30,6 @@ Before open up Visual Studio 2019 and make the build, **make camera accessible**
  - 2022/07/17 **face_effect** example now can export **Wavefront .obj** files (press 'o' key)
  - 2022/09/12 Merge v0.8.11
  - 2022/10/08 Merged from upstream
+ - 2023/04/20 add _SILENCE_NONFLOATING_COMPLEX_DEPRECATION_WARNING CPP in tensorflow-lite to fix build break on Visual Studio 2022 v17.5.4. Also if you had had enough **C1001: Internal compiler error**, turn off CPU overclocking may help.
 
 
